@@ -1,27 +1,23 @@
-/* Define color variables using coolers*/
+
 :root {
     --paynes-gray: #3a606e;
     --slate-gray: #607b7d;
     --battleship-gray: #828e82;
     --sage: #aaae8e;
     --platinum: #e0e0e0;
-
-    /* Colors for button states */
-    --correct-color: #4caf50; /* Green */
-    --incorrect-color: #f44336; /* Red */
-
+    --correct-color: #4caf50; 
+    --incorrect-color: #f44336; 
     --gradient-radial: radial-gradient(circle, var(--paynes-gray), var(--platinum));
 }
 
-/* Apply the gradients */
 body {
-    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: var(--gradient-radial); 
+    background: #F7EFE5; 
+    font-family: Quicksand, sans-serif;
 }
 
 #quiz-container {
@@ -42,7 +38,7 @@ body {
 #question {
     font-size: 2em; 
     font-weight: bold; 
-    color: var(--paynes-gray);
+    color: black;
     margin-bottom: 20px;
 }
 
@@ -54,9 +50,10 @@ body {
 }
 
 button {
-    background-color: var(--sage);
+    background-color: #C8A1E0;
     border: 1px solid var(--battleship-gray);
-    border-radius: 4px;
+    font-family: Quicksand, sans-serif;
+    border-radius: 8px;
     padding: 15px 25px; 
     width: 100%;
     max-width: 300px;
@@ -67,7 +64,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--slate-gray);
+    background-color: #912BBC;
     color: white;
     transform: scale(1.05);
 }
@@ -93,25 +90,26 @@ button.incorrect {
 #score {
     font-size: 1.5em; 
     font-weight: bold;
-    color: var(--paynes-gray);
+    color: black;
     margin-bottom: 20px;
 }
 
 #restart-btn {
     background-color: var(--sage);
     border: 1px solid var(--battleship-gray);
-    border-radius: 4px;
+    border-radius: 7px;
     padding: 10px 20px;
     cursor: pointer;
-    color: var(--paynes-gray);
+    color: black;
     font-size: 16px;
     transition: background-color 0.3s, transform 0.2s;
 }
 
 #restart-btn:hover {
-    background-color: var(--slate-gray);
+    background-color: #674188;
     color: white;
     transform: scale(1.05);
+    padding: 1rem;
 }
 
 #restart-btn:active {
