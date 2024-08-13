@@ -5,46 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Homepage</title>
     <style>/* styles.css */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        
-        .btn {
-            text-decoration: none;
-            display: inline-block;
-            padding: 10px 20px;
-            color: white;
-            background-color: #007bff;
-            border-radius: 4px;
-            border: none;
-            cursor: pointer;
-        }
-        
-        .btn:hover {
-            background-color: #0056b3;
-        }
+       body {
+    font-family: "Quicksand", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header_content2 {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    font-family: "Quicksand", sans-serif;
+    gap: 40rem;
+    margin-top: 1.5rem;
+}
+
+.menu1 {
+   font-size: .95rem;
+}
+
+.menu {
+    margin-left: -30.2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+#log {
+    font-size: 1.4rem;
+    font-family: "Quicksand", sans-serif;
+    background-color: #D1E9F6;
+    padding: 0.45rem;
+    border-radius: 12px;
+}
+
+button {
+   border-style: none;
+   background-color: white;
+   border-radius: 12px;
+   padding-left: 0.6rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color:  #D1E9F6;
+    transition: .84s;
+}
+
+.logins {
+    display: flex;
+    gap: 0.4rem;
+}
+
+#Sign {
+    font-size: 1.2rem;
+    font-family: "Quicksand", sans-serif;
+    background-color: #5B99C2;
+    padding: 0.45rem;
+    border-radius: 12px;
+    font-weight: bolder;
+}
+
+
+.main_content {
+    margin-top:5%;
+    margin-left: 10rem;
+    font-size: 1.5rem;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bolder;
+}
+
+#low_content {
+    
+    font-weight: lighter;
+}
+
+#getstarted {
+    margin-top: 4%;
+    font-size: 2rem;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: #D1E9F6;
+}
         </style>
 </head>
 <body>
-    <div class="container text-center mt-5">
-        <h1>Welcome to the Quiz!</h1>
-        <p>This is a simple quiz application to test your knowledge.</p>
-        <p>Click the button below to start the quiz.</p>
-        <a href="quiz.html" class="btn btn-primary">Start Quiz</a>
+    <header class="header_content1">
+        <div class="header_content2">
+            <div class="logo">
+            <img src="" alt="">
+          </div>
+           <div class="menu">
+            <button class="menu1"><a href="#">Home</a></button>
+            <button class="menu1"><a href="#">Plans</a></button>
+            <button class="menu1"><a href="#">Resources</a></button>
+            <button class="menu1"><a href="#">Solutions</a></button>
+            <button class="menu1"><a href="#">For Business</a></button>
+           </div>
+           <div class="logins">
+            <button id="log">Log in</button>
+            <button id="Sign">Sign up</button>
+           </div>
+        </div>
+    </header>
+    <div class="main_content">
+    <div>
+        <h1>Knowledge is of no value unless<br> you put it into practice.</h1>
+        <p id="low_content">Test your knowledge—quick, fun,<br> and challenging quizzes await!</p>
+    </div class="start">
+    <button id="getstarted"><a href="">Get Started.</a></button>
     </div>
 </body>
 </html>
