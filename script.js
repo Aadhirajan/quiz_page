@@ -146,7 +146,7 @@ function nextQuestion() {
 }
 
 function showResult() {
-    scoreElement.innerText = `Congradulations peers! \n Your score: ${score} out of ${questions.length}`;
+    scoreElement.innerText = `Congradulations peers! You did a great job!\n Your score: ${score} out of ${questions.length}`;
     resultContainer.style.display = 'block';
 }
 
