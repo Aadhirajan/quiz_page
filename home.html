@@ -1,176 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0">
-    <title>Quiz Homepage</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <style>
-      
-      body {
-    font-family: "Quicksand", sans-serif;
-      }
-a {
-    text-decoration: none;
-}
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=0" />
+        <title>Quiz Homepage</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                font-family: "Quicksand", sans-serif;
+            }
+            a {
+                text-decoration: none;
+            }
 
-img {
-    width: 45%;
-    margin-top: -20px;
-    margin-left: 2rem;
-}
+            img {
+                width: 45%;
+                margin-top: -20px;
+                margin-left: 2rem;
+            }
 
-.header_content2 {
-    display: flex;
-    flex-direction: row;
-    font-size: 1.4rem;
-    gap: 50rem;
-    margin-top: 1.5rem;
-}
+            .header_content2 {
+                display: flex;
+                flex-direction: row;
+                font-size: 1.4rem;
+                gap: 50rem;
+                margin-top: 1.5rem;
+            }
 
-.menu1 {
-   font-size: 1rem;
-   outline-style: none;
-   color: #912BBC;
-}
+            .menu1 {
+                font-size: 1rem;
+                outline-style: none;
+                color: #912bbc;
+            }
 
-.menu1:hover {
-    background-color: #C8A1E0;
-    transition: .2s;
-}
+            .menu1:hover {
+                background-color: #c8a1e0;
+                transition: 0.2s;
+            }
 
-.menu {
-    margin-left: 2rem;
-    display: flex;
-    gap: 1rem;
-}
+            .menu {
+                margin-left: 2rem;
+                display: flex;
+                gap: 1rem;
+            }
 
-#log {
-    border: 2px solid #C8A1E0;
-    background-color: #C8A1E0;
-    border-radius: 8px;
-    flex: none;
-    margin-top: 0;
-    padding: 10px 12px;
-    font-family: Quicksand, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-}
+            #log {
+                border: 2px solid #c8a1e0;
+                background-color: #c8a1e0;
+                border-radius: 8px;
+                flex: none;
+                margin-top: 0;
+                padding: 10px 12px;
+                font-family: Quicksand, sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+            }
 
-#log:hover {
-    background-color: azure;
-    transition: .5s;
-}
+            #log:hover {
+                background-color: azure;
+                transition: 0.5s;
+            }
 
-button {
-   border-style: none;
-   border-radius: 8px;
-   padding-left: 0.6rem;
-   outline-style:auto;
-   font-weight: 200;
-   outline-color: white;
-   background-color: white;
-}
+            button {
+                border-style: none;
+                border-radius: 8px;
+                padding-left: 0.6rem;
+                outline-style: auto;
+                font-weight: 200;
+                outline-color: white;
+                background-color: white;
+            }
 
-button:hover {
-    cursor: pointer;
-    background-color:  #D1E9F6;
-    transition: .84s;
-}
+            button:hover {
+                cursor: pointer;
+                background-color: #d1e9f6;
+                transition: 0.84s;
+            }
 
-.logins {
-    display: flex;
-    gap: 0.4rem;
-}
+            .logins {
+                display: flex;
+                gap: 0.4rem;
+            }
 
-#Sign {
-    border: 2px solid #912BBC;
-    background-color: #912BBC;
-    border-radius: 8px;
-    flex: none;
-    margin-top: 0;
-    padding: 10px 12px;
-    font-family: Quicksand, sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-}
+            #Sign {
+                border: 2px solid #912bbc;
+                background-color: #912bbc;
+                border-radius: 8px;
+                flex: none;
+                margin-top: 0;
+                padding: 10px 12px;
+                font-family: Quicksand, sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+            }
 
-#Sign:hover {
-    background-color: azure;
-    transition: .5s;
-}
+            #Sign:hover {
+                background-color: azure;
+                transition: 0.5s;
+            }
 
-.main_content {
-    margin-top:8%;
-    margin-left: 3rem;
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: row;
-}
+            .main_content {
+                margin-top: 8%;
+                margin-left: 3rem;
+                font-size: 1.5rem;
+                display: flex;
+                flex-direction: row;
+            }
 
-.start {
-    margin-top: -20rem;
-    margin-left: 3rem;
-    color: white;
-}
+            .start {
+                margin-top: -20rem;
+                margin-left: 3rem;
+                color: white;
+            }
 
-#getstarted {
-    margin-top: 6%;
-    font-size: 1.2rem;
-    padding: 1.2rem;
-    display: flex;
-    justify-content: center;
-    border-radius: 12px;
-    background-color: #912BBC;
-    outline-color: #912BBC;
-    font-weight: normal;
-    color:white;
-}
-#getstarted:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 19px 25px rgba(0, 0, 0, 0.3);
-    transition: .3s;
-}
-#getstarted:active {
-    transform: translateY(8px); 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: .6s;
-}
+            #getstarted {
+                margin-top: 6%;
+                font-size: 1.2rem;
+                padding: 1.2rem;
+                display: flex;
+                justify-content: center;
+                border-radius: 12px;
+                background-color: #912bbc;
+                outline-color: #912bbc;
+                font-weight: normal;
+                color: white;
+            }
+            #getstarted:hover {
+                transform: translateY(-7px);
+                box-shadow: 0 19px 25px rgba(0, 0, 0, 0.3);
+                transition: 0.3s;
+            }
+            #getstarted:active {
+                transform: translateY(8px);
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                transition: 0.6s;
+            }
 
-#start2 {
-    color: white;
-}
+            #start2 {
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header_content1">
+            <div class="header_content2">
+                <div class="menu">
+                    <button class="menu1"><a href="#">Home</a></button>
+                    <button class="menu1"><a href="#">Plans</a></button>
+                    <button class="menu1"><a href="#">Resources</a></button>
+                    <button class="menu1"><a href="#">Solutions</a></button>
+                    <button class="menu1"><a href="#">For Business</a></button>
+                    <button class="menu1"><a href="#">Contact Us</a></button>
+                </div>
+                <div class="logins">
+                    <button id="log">Log in</button>
 
-</style>
-</head>
-<body>
-    <header class="header_content1">
-        <div class="header_content2">
-           <div class="menu">
-            <button class="menu1"><a href="#">Home</a></button>
-            <button class="menu1"><a href="#">Plans</a></button>
-            <button class="menu1"><a href="#">Resources</a></button>
-            <button class="menu1"><a href="#">Solutions</a></button>
-            <button class="menu1"><a href="#">For Business</a></button>
-           </div>
-           <div class="logins">
-            <button id="log">Log in</button>
-        
-            <button id="Sign">Sign up</button>
-           </div>
+                    <button id="Sign">Sign up</button>
+                </div>
+            </div>
+        </header>
+        <div class="main_content">
+            <div>
+                <h1>
+                    Knowledge is of no value unless<br />
+                    you put it into practice.
+                </h1>
+                <p id="low_content">
+                    Test your knowledge—quick, fun,<br />
+                    and challenging quizzes await!
+                </p>
+            </div>
+            <img
+                src="Assets/2010.i301.004_Isometric quiz tv show composition.jpg"
+                alt=""
+            />
         </div>
-    </header>
-    <div class="main_content">
-    <div>
-        <h1>Knowledge is of no value unless<br> you put it into practice.</h1>
-        <p id="low_content">Test your knowledge—quick, fun,<br> and challenging quizzes await!</p>
-    </div>
-        <img src="Assets/2010.i301.004_Isometric quiz tv show composition.jpg" alt="">
-    </div>
-    <div class="start">
-    <button id="getstarted" onclick="window.location.href='quiz.html'">Get Started</button>
-    </div>
-</body>
+        <div class="start">
+            <button id="getstarted" onclick="window.location.href='quiz.html'">
+                Get Started
+            </button>
+        </div>
+    </body>
 </html>
