@@ -4,4 +4,4 @@ function prefetchResource(resourceURL){
     xhrRequest.send();
 }
 prefetchResource('https://extraone.netlify.app/script.js');
-prefetchResource('https://extraone.netlify.app/styles.js');
+prefetchResource('https://extraone.netlify.app/styles.css');
